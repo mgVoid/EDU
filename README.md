@@ -1,5 +1,3 @@
-Create a node.js application, which once is started, prints out to console data:
-
 users;
 photos related to users;
 unique tags related to photos;
