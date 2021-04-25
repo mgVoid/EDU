@@ -15,14 +15,11 @@ export default class Photo extends Dates implements IPhoto, IPhotoClass {
     public id: string = faker.datatype.uuid(),
     public imgUrl: string = faker.image.imageUrl(),
     public verifiedStatus: boolean = faker.datatype.boolean(),
-    public description: string = faker.lorem.paragraph(1000),
+    public description: string = faker.lorem.paragraph(9999).substring(0, 500),
     public fireCount: number = faker.datatype.number(),
     public tags: ITag[] = []
   ) {
     super();
-    if (description.length > 500){
-      description = description.slice(0, 500 - 1)
-    }
   }
 
   static create(userId: string) {
