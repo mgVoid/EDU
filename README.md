@@ -1,3 +1,4 @@
+Once is started, prints out to the console following data:
 - users;
 - photos related to users;
 - unique tags related to photos;
